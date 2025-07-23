@@ -1,5 +1,5 @@
 /*
 Handles compliment randomization and button logic. 
-Authors: Emma, Caroline
+Authors: Summer, Caroline
 Version: July 2025
 */
