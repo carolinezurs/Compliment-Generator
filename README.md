@@ -1,31 +1,31 @@
-# Compliment Generator
+# 🫧 Compliment Generator 
 
-A feel-good web app that generates beautifully weird, poetic, or uplifiting compliments. Made for the CS Girlies Hackathon.
+A feel-good web app that generates beautifully weird, poetic, or uplifting compliments. Made for the CS Girlies Hackathon.
 
  ----
 
- ## Overview
+ ## 🌀 Overview
 
-This app is designed to spread kindess in a digital world - one compliment at a time. 
+This app is designed to spread kindness in a digital world - one compliment at a time. 
 
 ----
 
-## Features
+## 🖌️ Features
 
 - Randomly generates a compliment on button click
 - Whimsical UI with custom illustrations
-- Handwritten complements with a human flare
-- Fully brower-based
+- Handwritten complements with a human flair
+- Fully browser-based
 
 ----
 
-## Tech Stack 
+## 🐋 Tech Stack 
 - **HTML & CSS** - Structure and styling
 - **JavaScript** - Compliment logic and interactivity
 
 ----
 
-## Team & Roles
+## 🐠 Team & Roles
 | Name       | Role                          | Responsibilities |
 |------------|-------------------------------|------------------|
 | **Amanda** | Frontend Lead                 | Layout, spacing, fonts, etc. |
@@ -36,10 +36,14 @@ This app is designed to spread kindess in a digital world - one compliment at a 
 
 ----
 
-## Run Our App!
+## 🦋 Run Our App!
 
 ### Run Locally 
-1. Clone the repo 
+1. Clone the repo
+``` bash
+git clone https://github.com/your-username/Compliment-Generator.git
+```
+
 
     
  
