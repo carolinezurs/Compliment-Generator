@@ -30,7 +30,7 @@ This app is designed to spread kindness in a digital world - one compliment at a
 |------------|-------------------------------|------------------|
 | **Amanda** | Frontend Lead                 | Layout, spacing, fonts, etc. |
 | **Caroline** | Project Lead + Helper     | Team coordinator, code assisting, bug testing |
-| **Emma**   | Backend Lead | JavaScript compliment generator logic, content brainstorming |
+| **Summer**   | Backend Lead | JavaScript compliment generator logic, content brainstorming |
 | **Tina**   | Creative Lead | Custom illustrations, icons, and creative assets |
 | **Elisa**  | Meida Lead + Helper | Writes compliments, records demo video, code assisting |
 
