@@ -2,13 +2,11 @@
 
 A feel-good web app that generates beautifully weird, poetic, or uplifting compliments. Made for the CS Girlies Hackathon.
 
- ----
 
  ## 🌀 Overview
 
 This app is designed to spread kindness in a digital world - one compliment at a time. 
 
-----
 
 ## 🖌️ Features
 
@@ -17,24 +15,21 @@ This app is designed to spread kindness in a digital world - one compliment at a
 - Handwritten complements with a human flair
 - Fully browser-based
 
-----
 
 ## 🐋 Tech Stack 
 - **HTML & CSS** - Structure and styling
 - **JavaScript** - Compliment logic and interactivity
 
-----
 
 ## 🐠 Team & Roles
 | Name       | Role                          | Responsibilities |
 |------------|-------------------------------|------------------|
-| **Amanda** | Frontend Lead                 | Layout, spacing, fonts, etc. |
-| **Caroline** | Project Lead + Helper     | Team coordinator, code assisting, bug testing |
-| **Summer**   | Backend Lead | JavaScript compliment generator logic, content brainstorming |
-| **Tina**   | Creative Lead | Custom illustrations, icons, and creative assets |
-| **Elisa**  | Meida Lead + Helper | Writes compliments, records demo video, code assisting |
+| **Nyca** | Frontend Lead                 | Designed and built the app’s layout and styling using HTML and CSS |
+| **Caroline** | Project Lead     | Coordinated the team, created design mockups, and reviewed code for bugs and consistency |
+| **Summer**   | Backend Lead | Developed the app’s core functionality by writing JavaScript functions  |
+| **Tina**   | Creative Lead | Designed the color palette and hand-drew all characters, buttons, and background elements |
+| **Elisa**  | Media Lead | Crafted the compliment content, wrote the voiceover script, and filmed the project submission video |
 
-----
 
 ## 🦋 Run Our App!
 
