@@ -24,7 +24,7 @@ This app is designed to spread kindness in a digital world - one compliment at a
 ## 🐠 Team & Roles
 | Name       | Role                          | Responsibilities |
 |------------|-------------------------------|------------------|
-| **Amanda** | Frontend Lead                 | Designed and built the app’s layout and styling using HTML and CSS |
+| **Nyca** | Frontend Lead                 | Designed and built the app’s layout and styling using HTML and CSS |
 | **Caroline** | Project Lead     | Coordinated the team, created design mockups, and reviewed code for bugs and consistency |
 | **Summer**   | Backend Lead | Developed the app’s core functionality by writing JavaScript functions  |
 | **Tina**   | Creative Lead | Designed the color palette and hand-drew all characters, buttons, and background elements |
