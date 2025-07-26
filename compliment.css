@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff6e8;
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Bigger Window Frame */
+.window {
+  width: 500px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 6px 6px 0 black;
+  overflow: hidden;
+}
+
+/* Title Bar */
+.title-bar {
+  background-color: #f7b7c5;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+/* Bigger Top Icons */
+.window-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.top-icon {
+  width: 22px;
+  height: 22px;
+  image-rendering: pixelated;
+  cursor: pointer;
+}
+
+/* Main Content Card */
+.card {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* Character Icons */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+/* Prompt Text */
+.prompt {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* "Click Me" PNG */
+.click-btn {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: transform 0.2s ease;
+}
+
+.click-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Compliment Vibe Button Section */
+.vibe-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* BIGGER vibe PNGs */
+.vibe-img-btn {
+  width: 200px;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.vibe-img-btn:hover {
+  transform: scale(1.05);
+}
+#pixeltoad {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 100px;
+  z-index: 999;
+  animation: bounceIdle 2.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#pixeltoad img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+#pixeltoad:hover {
+  animation: wave 0.8s ease;
+}
+
+#speech-bubble {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff6e8;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: 'Fredoka', sans-serif;
+  color: #000;
+  width: max-content;
+  max-width: 160px;
+  display: none;
+}
+
+/* Bouncy idle motion */
+@keyframes bounceIdle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Wave motion (rotate left/right) */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  50% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes floatAround {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(20px, -10px); }
+  50%  { transform: translate(0, -20px); }
+  75%  { transform: translate(-20px, -10px); }
+  100% { transform: translate(0, 0); }
+}
