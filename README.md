@@ -38,7 +38,7 @@ This app is designed to spread kindness in a digital world - one compliment at a
 ``` bash
 git clone https://github.com/your-username/Compliment-Generator.git
 ```
-2. avigate into the project directory
+2. Navigate into the project directory
 ```bash
 cd Compliment-Generator
 ```
