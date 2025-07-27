@@ -1,5 +1,5 @@
 /*
-Handles compliment randomization and button logic. (need to be changed)
+Handles loading the server from the local files. 
 Authors: Summer, Caroline
 Version: July 2025
 */
