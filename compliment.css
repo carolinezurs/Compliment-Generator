@@ -15,9 +15,11 @@ body {
   height: 100vh;
 }
 
-/* Bigger Window Frame */
+/* ========================
+   💻 Main Window Container
+   ======================== */
 .window {
-  width: 500px;
+  width: 600px;
   background-color: white;
   border: 2px solid black;
   border-radius: 10px 10px 0 0;
@@ -25,7 +27,9 @@ body {
   overflow: hidden;
 }
 
-/* Title Bar */
+/* ========================
+   🎀 Title Bar
+   ======================== */
 .title-bar {
   background-color: #f7b7c5;
   padding: 14px 18px;
@@ -37,33 +41,37 @@ body {
   color: black;
 }
 
-/* Bigger Top Icons */
 .window-buttons {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
 .top-icon {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   image-rendering: pixelated;
   cursor: pointer;
 }
 
-/* Main Content Card */
+/* ========================
+   🧸 Main Content
+   ======================== */
 .card {
   padding: 40px 30px;
   text-align: center;
 }
 
-/* Character Icons */
+/* Character Icon (Frog/Duck/etc) */
 .icon {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   margin-bottom: 25px;
 }
 
-/* Prompt Text */
+/* ========================
+   📝 Text Prompt
+   ======================== */
 .prompt {
   font-size: 20px;
   font-weight: 500;
@@ -73,7 +81,9 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* "Click Me" PNG */
+/* ========================
+   🔘 Click Me PNG
+   ======================== */
 .click-btn {
   width: 180px;
   height: auto;
@@ -86,7 +96,9 @@ body {
   transform: scale(1.05);
 }
 
-/* Compliment Vibe Button Section */
+/* ========================
+   💖 Vibe Selection Buttons
+   ======================== */
 .vibe-buttons {
   display: flex;
   flex-direction: column;
@@ -95,11 +107,10 @@ body {
   margin-top: 20px;
 }
 
-/* BIGGER vibe PNGs */
 .vibe-img-btn {
-  width: 200px;
+  width: 240px;
   height: auto;
-  max-height: 70px;
+  max-height: 80px;
   object-fit: contain;
   image-rendering: pixelated;
   cursor: pointer;
@@ -109,6 +120,53 @@ body {
 .vibe-img-btn:hover {
   transform: scale(1.05);
 }
+
+/* ========================
+   🧭 Navigation Buttons
+   ======================== */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.nav-icon {
+  width: 60px;
+  height: auto;
+  image-rendering: pixelated;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  transform: scale(1.1);
+}
+
+/* "More Please!" Button */
+.main-btn {
+  background-color: #fdaaaa;
+  border: 2px solid #333;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-image: radial-gradient(circle, #ffa6b7, #ffbcbc);
+  box-shadow: 2px 2px 0px #000;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ========================
+   🐸 Pixeltoad NPC
+   ======================== */
 #pixeltoad {
   position: fixed;
   bottom: 40px;
@@ -130,6 +188,9 @@ body {
   animation: wave 0.8s ease;
 }
 
+/* ========================
+   💬 Speech Bubble
+   ======================== */
 #speech-bubble {
   position: absolute;
   bottom: 110%;
@@ -143,17 +204,18 @@ body {
   font-family: 'Fredoka', sans-serif;
   color: #000;
   width: max-content;
-  max-width: 160px;
+  max-width: 180px;
   display: none;
 }
 
-/* Bouncy idle motion */
+/* ========================
+   🎞 Animations
+   ======================== */
 @keyframes bounceIdle {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
 
-/* Wave motion (rotate left/right) */
 @keyframes wave {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(8deg); }
@@ -161,6 +223,7 @@ body {
   75% { transform: rotate(8deg); }
   100% { transform: rotate(0deg); }
 }
+
 @keyframes floatAround {
   0%   { transform: translate(0, 0); }
   25%  { transform: translate(20px, -10px); }
@@ -168,3 +231,412 @@ body {
   75%  { transform: translate(-20px, -10px); }
   100% { transform: translate(0, 0); }
 }
+
+@keyframes sparkle {
+  0%, 100% {
+    filter: brightness(1);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(1.3);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes juggle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+}
+
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.dark-btn:hover {
+  transform: scale(1.2);
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .window {
+  background-color: #2e2e2e;
+  border-color: #888;
+}
+
+body.dark-mode .title-bar {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode .main-btn,
+body.dark-mode .themed-btn {
+  background-color: #555;
+  color: #fff;
+  border-color: #999;
+}
+
+body.dark-mode .prompt {
+  color: white;
+}
+
+body.dark-mode #speech-bubble {
+  background-color: #333;
+  color: white;
+  border-color: white;
+}
+
+/* Sparkle & Juggle Hover Effects */
+.main-btn:hover,
+.themed-btn:hover,
+.nav-icon:hover,
+.click-btn:hover,
+.vibe-img-btn:hover {
+  animation: sparkle 0.6s ease-in-out, juggle 0.5s ease-in-out;
+}
+
+/* ========================
+   About Us Button (top bar)
+   ======================== */
+.about-btn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #444;
+  margin-left: 10px;
+  padding: 0 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+  text-decoration: none;
+}
+
+.about-btn:hover {
+  color: #a77ff2;
+  transform: scale(1.2);
+  animation: sparkle 0.6s ease-in-out, juggle 0.5s ease-in-out;
+}
+
+/* ========================
+   About Us Text Link (under buttons)
+   ======================== */
+.about-link {
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.about-link a {
+  color: #a77ff2;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 2px solid #a77ff2;
+  border-radius: 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-link a:hover {
+  background-color: #a77ff2;
+  color: white;
+  text-decoration: none;
+  animation: sparkle 0.6s ease-in-out, juggle 0.5s ease-in-out;
+}
+
+/* ========================
+   Meet the Creators Cards Grid Layout
+   ======================== */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 24px;
+  max-width: 1000px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card-container > .dev-card:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card-container > .dev-card:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.card-container > .dev-card:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.card-container > .dev-card:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.card-container > .dev-card:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.dev-card {
+  background: white;
+  border: 2px solid black;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 #000;
+  width: 300px;
+  padding: 24px 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+/* Name color coding + animal icons */
+
+.name-elisa {
+  color: #ff69b4; /* pink */
+  position: relative;
+  padding-right: 25px;
+}
+.name-elisa::after {
+  content: "🐢"; /* turtle */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.name-nyca {
+  color: #f5d300; /* yellow */
+  background: linear-gradient(90deg, #ffffff 100%); /* yellow & blue */
+  position: relative;
+  padding-right: 25px;
+}
+.name-nyca::after {
+  content: "🐱"; /* kitten */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.name-venus {
+  color: #0070ff; /* blue */
+  position: relative;
+  padding-right: 25px;
+}
+.name-venus::after {
+  content: "🐯"; /* tiger */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.name-caro {
+  color: #800080; /* purple */
+  position: relative;
+  padding-right: 25px;
+}
+.name-caro::after {
+  content: "🦓"; /* zebra */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.name-tina {
+  color: #ff69b4; /* pink */
+  position: relative;
+  padding-right: 25px;
+}
+.name-tina::after {
+  content: "🐯"; /* tiger */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+/* ========================
+   🌥️ FAQ Window & Clouds
+   ======================== */
+
+.faq-window {
+  width: 600px;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid black;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 black;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  font-size: 16px;
+}
+
+.faq-header {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff7eb3;
+}
+
+.faq-item {
+  margin-bottom: 18px;
+}
+
+.faq-item h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.faq-item p {
+  color: #333;
+}
+
+/* Floating clouds animation */
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatClouds 60s linear infinite;
+  z-index: 0;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -60%;
+}
+
+.cloud::after {
+  width: 80%;
+  height: 80%;
+  top: -40%;
+  left: 60%;
+}
+
+.cloud.small {
+  width: 80px;
+  height: 40px;
+  top: 100px;
+  left: -100px;
+  animation-duration: 80s;
+}
+
+.cloud.medium {
+  width: 120px;
+  height: 60px;
+  top: 200px;
+  left: -150px;
+  animation-duration: 100s;
+}
+
+.cloud.large {
+  width: 180px;
+  height: 90px;
+  top: 50px;
+  left: -200px;
+  animation-duration: 120s;
+}
+
+@keyframes floatClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+.back-home-btn {
+  display: block;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ffb6c1, #ff69b4);
+  color: white;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  margin: 40px auto 0 auto;
+  width: fit-content;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: sparkle 3s infinite ease-in-out;
+}
+
+.back-home-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to bottom right, #ff7fba, #ff4fa2);
+  box-shadow: 5px 5px 0 #222;
+}
+
+/* Optional sparkle animation (already in your sheet but here's again just in case) */
+@keyframes sparkle {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+/* Inline CSS for About Us button - can move to compliment.css */
+    .about-link {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .about-link a {
+      color: #7c4dff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    .about-link a:hover {
+      text-decoration: underline;
+      color: #9f78ff;
+    }
+    .about-btn {
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin-left: 8px;
+      color: #444;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    .about-btn:hover {
+      color: #7c4dff;
+    }
