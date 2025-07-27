@@ -83,21 +83,17 @@
         "It’s so much fun having conversations with you"
       ]
     };
-
     const params = new URLSearchParams(window.location.search);
-    const type = params.get("type") || "wholesome";
-
+    const type = params.get("type");
     function getRandomCompliment() {
       const category = compliments[type];
-      if (!category) return "Oops! Invalid category 😢";
+
       const index = Math.floor(Math.random() * category.length);
       return category[index];
     }
-
     function loadCompliment() {
       complimentBox.textContent = getRandomCompliment();
     }
-
     document.querySelector(".main-btn").addEventListener("click", loadCompliment);
     loadCompliment();
   </script>
