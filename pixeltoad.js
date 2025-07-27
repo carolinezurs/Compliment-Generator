@@ -1,3 +1,4 @@
+
 let idleTimer;
 let isFloating = false;
 
