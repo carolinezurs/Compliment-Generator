@@ -45,9 +45,3 @@ class ComplimentPicker {
   }
 }
 module.exports = ComplimentPicker;
-
-
-
-
-
-
