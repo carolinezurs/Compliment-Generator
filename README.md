@@ -43,7 +43,7 @@ git clone https://github.com/your-username/Compliment-Generator.git
 cd Compliment-Generator
 ```
 3. Open the main HTML file in your browser
-You can do this by simply double-clicking on index.html, or right-clicking it and choosing “Open with” → your preferred browser.
+You can do this by simply double-clicking on ComplimentGenerator.html, or right-clicking it and choosing “Open with” → your preferred browser.
 
 
 
